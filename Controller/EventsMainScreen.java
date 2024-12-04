@@ -17,7 +17,8 @@ public class EventsMainScreen
     private static JFrame mainMenuFrame; // Almacena el marco principal
     private static Clip audioClip; // Almacena la música de fondo
 
-    public EventsMainScreen(UserManager userManager) {
+    public EventsMainScreen(UserManager userManager) 
+    {
         EventsMainScreen.userManager = userManager;
     }
 

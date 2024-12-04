@@ -13,35 +13,37 @@ import Controller.ReadWriteData;
 
 
 public class MainScreen {
-    Clip songMenu = MusicLoader.loadASong("audios/song.wav");
     private final UserManager userManager; // referencia al administrador de usuarios para la serialización
-
-    public MainScreen(UserManager userManager) {
+    
+    public MainScreen(UserManager userManager) 
+    {
         this.userManager = userManager; // guardar referencia al administrador de usuarios
         new EventsMainScreen(userManager); // dandole la lista a la clase que maneja los eventos
         createMainScreen(); // este método construye el menú de inicio
     }
-
+    
     @SuppressWarnings("unused") // esto es para los lambdas de los actionlisteners de los botones del menú.
-    private void createMainScreen() {
+    private void createMainScreen() 
+    {
         JFrame mainFrame = new JFrame("");
         JPanel panelBL = new JPanel(new BorderLayout());
         JPanel columnGridPanel = new JPanel(new GridLayout(4, 1));
         int widthImg = 300;
         int heigthImg = 300;
-
+        
         // configuración principal de la ventana
         mainFrame.setUndecorated(true);
         mainFrame.setResizable(false);
         mainFrame.setFocusCycleRoot(true);
-
+        
         try 
         {
             // cargando la canción del menú de inicio
+            Clip songMenu = MusicLoader.loadASong("C:/Users/adria/OneDrive/Desktop/uabc/semestre_4/LPOO/GuessIt/audios/song.wav");
             songMenu.start();
 
             // procesamiento de la imagen del logo
-            BufferedImage originalImage = ImageIO.read(new File("images/Logo.png"));
+            BufferedImage originalImage = ImageIO.read(new File("C:/Users/adria/OneDrive/Desktop/uabc/semestre_4/LPOO/GuessIt/images/Logo.png"));
             BufferedImage logoGuessIt = new BufferedImage(widthImg, heigthImg, BufferedImage.TYPE_INT_ARGB);
 
             Graphics2D g = logoGuessIt.createGraphics();

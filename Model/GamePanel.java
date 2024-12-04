@@ -61,7 +61,7 @@ public class GamePanel extends JPanel
             @Override
             public void mouseClicked(MouseEvent e) 
             {
-                Clip clickedButton = MusicLoader.loadASong("audios/select.wav");
+                Clip clickedButton = MusicLoader.loadASong("C:/Users/adria/OneDrive/Desktop/uabc/semestre_4/LPOO/GuessIt/audios/select.wav");
                 clickedButton.start();
                 handleMouseClick(e.getX(), e.getY());
             }
@@ -168,7 +168,7 @@ public class GamePanel extends JPanel
 
             if (currentNum == targetNum) 
             {
-                Clip winAudio = MusicLoader.loadASong("audios/win.wav"); // Activando la canción de la celebración
+                Clip winAudio = MusicLoader.loadASong("C:/Users/adria/OneDrive/Desktop/uabc/semestre_4/LPOO/GuessIt/audios/win.wav"); // Activando la canción de la celebración
                 winAudio.start(); 
                 threadReference.resetClock(); // Reiniciando el hilo
 
