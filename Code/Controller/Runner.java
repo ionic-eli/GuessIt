@@ -1,5 +1,5 @@
-package Controller;
-import View.MainScreen;
+package Code.Controller;
+import Code.View.MainScreen;
 
 public class Runner 
 {

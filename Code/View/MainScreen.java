@@ -1,4 +1,4 @@
-package View;
+package Code.View;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -6,10 +6,10 @@ import javax.imageio.ImageIO;
 import javax.sound.sampled.*;
 import javax.swing.*;
 
-import Model.UserManager;
-import Controller.EventsMainScreen;
-import Controller.MusicLoader;
-import Controller.ReadWriteData;
+import Code.Controller.EventsMainScreen;
+import Code.Controller.MusicLoader;
+import Code.Controller.ReadWriteData;
+import Code.Model.UserManager;
 
 
 public class MainScreen {

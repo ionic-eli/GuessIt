@@ -1,4 +1,4 @@
-package Model;
+package Code.Model;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -6,8 +6,8 @@ import java.awt.event.MouseEvent;
 import javax.sound.sampled.Clip;
 import javax.swing.*;
 
-import View.GameScreen;
-import Controller.MusicLoader;
+import Code.Controller.MusicLoader;
+import Code.View.GameScreen;
 
 public class GamePanel extends JPanel 
 {

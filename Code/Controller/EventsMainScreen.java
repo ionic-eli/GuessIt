@@ -1,13 +1,12 @@
-package Controller;
+package Code.Controller;
 import java.util.ArrayList;
 import javax.sound.sampled.Clip;
 import javax.swing.*;
 
-import Model.UserManager;
-import Model.UserVideogame;
-import View.SelectUserToPlay;
-import View.Scoreboard;
-
+import Code.Model.UserManager;
+import Code.Model.UserVideogame;
+import Code.View.Scoreboard;
+import Code.View.SelectUserToPlay;
 public class EventsMainScreen 
 {
     static String msg = "";
@@ -23,7 +22,6 @@ public class EventsMainScreen
     }
 
     // eventos / métodos de cada botón de la clase mainscreen
-
     public static void startGame(JFrame frame, Clip audio) 
     {
         // inicializar referencias al menú principal y al clip de audio

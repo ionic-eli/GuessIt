@@ -1,10 +1,10 @@
-package View;
+package Code.View;
 import java.awt.*;
 import javax.sound.sampled.Clip;
 import javax.swing.*;
 
-import Model.UserManager;
-import Model.UserVideogame;
+import Code.Model.UserManager;
+import Code.Model.UserVideogame;
 
 public class SelectUserToPlay 
 {

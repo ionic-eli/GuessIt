@@ -1,10 +1,10 @@
-package View;
+package Code.View;
 import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-import Model.UserVideogame;
+import Code.Model.UserVideogame;
 
 public class Scoreboard {
 

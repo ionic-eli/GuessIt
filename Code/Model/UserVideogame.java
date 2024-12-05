@@ -1,4 +1,4 @@
-package Model;
+package Code.Model;
 
 public class UserVideogame extends Usuario
 {

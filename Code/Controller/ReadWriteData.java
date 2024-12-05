@@ -1,9 +1,9 @@
-package Controller;
+package Code.Controller;
 import java.io.*;
 import java.util.ArrayList;
 
-import Model.UserManager;
-import Model.UserVideogame;
+import Code.Model.UserManager;
+import Code.Model.UserVideogame;
 
 public class ReadWriteData 
 {
@@ -32,7 +32,10 @@ public class ReadWriteData
 
             ois.close();
         } 
-        catch (Exception e){}
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
 
         return userManager;
     }
@@ -50,6 +53,9 @@ public class ReadWriteData
             }
             oos.close();
         } 
-        catch (Exception e){}
-    }   
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

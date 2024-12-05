@@ -1,4 +1,4 @@
-package Model;
+package Code.Model;
 
 // Clase para modelar a un usuario de la vida real
 import java.io.Serializable;

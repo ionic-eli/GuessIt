@@ -1,11 +1,11 @@
-package View;
+package Code.View;
 import java.awt.*;
 import java.util.concurrent.TimeUnit;
 import javax.swing.*;
 
-import Model.GamePanel;
-import Model.UserManager;
-import Model.UserVideogame;
+import Code.Model.GamePanel;
+import Code.Model.UserManager;
+import Code.Model.UserVideogame;
 
 public class GameScreen 
 {
